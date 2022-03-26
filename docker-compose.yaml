@@ -1,0 +1,9 @@
+version: '3.5'
+
+services:
+  base-apache-kafka:
+    container_name: base-apache-kafka
+    image: "aescobaricc/base-apache-kafka:1.0-jdk8-kafka3.1.0"
+    build:
+      context: .
+      dockerfile: ./dockerfile
